@@ -17,6 +17,7 @@ public class MyWorld extends World
     {    
         super(600, 400, 1); 
         getBackground().scale( 600, 400 );
+        addObject( new ROBO(), 300, 200 );
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         
     }
