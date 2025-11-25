@@ -2,7 +2,9 @@
 class.A.image=robo.png
 class.HIKAKIN.image=bee.png
 class.MyWorld.image=oheya.jpg
+class.ROBO.image=robo.png
 class.mahiro.image=man01.png
+<<<<<<< HEAD
 class.takara.image=takara.png
 dependency1.from=MyWorld
 dependency1.to=takara
@@ -11,6 +13,15 @@ editor.fx.0.height=739
 editor.fx.0.width=816
 editor.fx.0.x=938
 editor.fx.0.y=234
+=======
+dependency1.from=MyWorld
+dependency1.to=ROBO
+dependency1.type=UsesDependency
+editor.fx.0.height=896
+editor.fx.0.width=816
+editor.fx.0.x=955
+editor.fx.0.y=210
+>>>>>>> 35b8da274e96dbb1734091a87817ecd75c322877
 height=585
 package.numDependencies=1
 package.numTargets=5
@@ -50,7 +61,11 @@ target3.width=80
 target3.x=0
 target3.y=0
 target4.height=50
+<<<<<<< HEAD
 target4.name=HIKAKIN
+=======
+target4.name=ROBO
+>>>>>>> 35b8da274e96dbb1734091a87817ecd75c322877
 target4.showInterface=false
 target4.type=ClassTarget
 target4.width=80
@@ -66,5 +81,10 @@ target5.y=0
 version=3.0.0
 width=825
 world.lastInstantiated=MyWorld
+<<<<<<< HEAD
 xPosition=796
 yPosition=242
+=======
+xPosition=810
+yPosition=262
+>>>>>>> 35b8da274e96dbb1734091a87817ecd75c322877
