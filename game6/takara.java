@@ -15,7 +15,7 @@ public class takara extends Actor
     public void act() 
     {
         GreenfootImage img = getImage(); // 現在の画像を取得
-        img.scale(50, 50);               // 幅50, 高さ50に変更
+        img.scale(100, 100);               // 幅50, 高さ50に変更
         setImage(img); 
         // Add your action code here.
     }    
