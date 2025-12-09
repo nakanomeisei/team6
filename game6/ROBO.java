@@ -12,15 +12,22 @@ public class ROBO extends Actor
      * Act - do whatever the ROBO wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
+          int A = -5;
+        int B = -1;
     public void act() 
     {
         // Add your action code here.
+       
         getImage().scale( 100, 100 );
         setRotation(0);
-        int A = -5;
-        int B = -1;
+
+         if (Greenfoot.isKeyDown("space")) {
+            A=0;
+            B=0;
+        }
         int C = A + (int)(Math.random()*((B-A)+1));
         move(C);
+       
         
         int x= getX();
         if( x <= 80){
