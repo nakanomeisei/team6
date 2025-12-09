@@ -17,6 +17,9 @@ public class ROBO extends Actor
         // Add your action code here.
         getImage().scale( 100, 100 );
         setRotation(0);
-        move(-3);
+        int A = -5;
+        int B = -1;
+        int C = A + (int)(Math.random()*((B-A)+1));
+        move(C);
     }    
 }
