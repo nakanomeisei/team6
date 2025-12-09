@@ -21,5 +21,11 @@ public class ROBO extends Actor
         int B = -1;
         int C = A + (int)(Math.random()*((B-A)+1));
         move(C);
+        
+        int x= getX();
+        if( x <= 80){
+            getWorld().showText( "GAME OVER", 395, 170 );
+            Greenfoot.stop();
+        }
     }    
 }
