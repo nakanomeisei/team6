@@ -8,7 +8,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class MyWorld extends World
 {
-
+    
     /**
      * Constructor for objects of class MyWorld.
      * 
@@ -18,7 +18,7 @@ public class MyWorld extends World
         super(600, 400, 1); 
         getBackground().scale( 600, 400 );
         addObject( new takara(), 20, 200);
-        addObject( new ROBO(), 590, 200 );
+        addObject( new ROBO(), 580, 200 );
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         
     }
