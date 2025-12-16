@@ -12,8 +12,10 @@ public class ROBO extends Actor
      * Act - do whatever the ROBO wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
-        int A = -5;
-        int B = -1;
+        double A = -5;
+        double B = -1;
+        int C = -1;
+        int i = 0;
         int N = 10;
         int score = 0;
     public void act() 
@@ -23,6 +25,7 @@ public class ROBO extends Actor
         getImage().scale( 100, 100 );
         setRotation(0);
         getWorld().showText("SCORE:"+score, 390, 50 );
+        getWorld().showText(11-N+"お掃除目", 100, 20 );
 
         if (Greenfoot.isKeyDown("space")) {
             A=0;
@@ -32,16 +35,20 @@ public class ROBO extends Actor
             getWorld().showText("SCORE:"+score, 390, 50 );
             N--;
             if( N <= 0){
-            getWorld().showText( "CLEAR", 395, 170 );
-            Greenfoot.stop();
+                getWorld().showText( "CLEAR", 395, 170 );
+                Greenfoot.stop();
             }
             Greenfoot.delay(100);
             setLocation( 580,200 );
-            A = -5;
+            A = -5-(10-N)*1.5;
             B = -1;
             
         }
-        int C = A + (int)(Math.random()*((B-A)+1));
+        i++;
+        if(i%5==1){
+            C = (int)A + (int)(Math.random()*((B-A)+1));
+        }   
+   
         move(C);
        
         
