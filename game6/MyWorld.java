@@ -18,28 +18,13 @@ public class MyWorld extends World
     {    
         super(600, 400, 1); 
         getBackground().scale( 600, 400 );
-        showText("PRESS S TO START", 200, 150 );
+        addObject( new takara(), 20, 200);
+        addObject( new ROBO(), 580, 200 );
         
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         
         
         
     }
-    public void act()
-    {
-        
-        if (Greenfoot.isKeyDown("S")) {
-            started = true;
-            startGame();
-            showText("", 200, 150 );
-        }
-        
-    }
- 
-    private void startGame()
-    {
-        addObject( new takara(), 20, 200);
-        addObject( new ROBO(), 580, 200 );
-        // 他のActorもここで追加
-    }
+   
 }
