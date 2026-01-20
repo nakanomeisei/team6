@@ -24,8 +24,8 @@ public class ROBO extends Actor
         // Add your action code here.
         getImage().scale( 100, 100 );
         setRotation(0);
-        getWorld().showText("SCORE:"+score, 390, 50 );
-        getWorld().showText(11-N+"お掃除目", 100, 20 );
+        getWorld().showText("SCORE:"+score+"/1000", 390, 50 );
+        getWorld().showText(11-N+"お掃除目  　SPACEで停止", 140, 20 );
  
         if (Greenfoot.isKeyDown("space")) {
             A=0;
@@ -34,7 +34,7 @@ public class ROBO extends Actor
             now = 0;
             now += 116-0.2*x;
             score += now;
-            getWorld().showText("SCORE:"+score, 390, 50 );
+            getWorld().showText("SCORE:"+score+"/1000", 390, 50 );
             N--;
             if( N <= 0){
                 getWorld().showText( "CLEAR", 395, 170 );
