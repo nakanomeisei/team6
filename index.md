@@ -6,7 +6,9 @@ spaceキー・・・roboを止める　　
 
 内容説明  　
 
-・spacekキーを押してroboを止めてtakaraに近いと高得点。
+・spacekキーを押してroboを止めます。  
+
+・roboがtakaraに近いと高得点です。
 
 ・roboがtakaraに当たってしまうとゲームオーバーになります。
 
